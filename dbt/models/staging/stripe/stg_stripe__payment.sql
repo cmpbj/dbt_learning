@@ -1,7 +1,7 @@
 with
     source as (
         select *
-        from stripe.payments
+        from {{ source('raw_stripe', 'payments') }}
     )
 
     , renamed as (

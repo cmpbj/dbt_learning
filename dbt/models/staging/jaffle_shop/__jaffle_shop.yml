@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_jaffle_shop
+    database: dbt-learning-423822
+    schema: jaffle_shop
+    tables:
+      - name: customers
+      - name: orders
+  

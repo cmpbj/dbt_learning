@@ -1,7 +1,7 @@
 with 
     source as (
         select *
-        from jaffle_shop.customers
+        from {{ source('raw_jaffle_shop', 'customers') }}
     )
 
     , renamed as (
