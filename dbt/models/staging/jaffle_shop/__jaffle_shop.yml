@@ -18,4 +18,7 @@ sources:
             data_tests:
               - unique
               - not_null
+      - name: adf_triggers
+      - name: adf_pipeline_runs
+      - name: adf_pipelines
   

@@ -2,7 +2,9 @@ version: 2
 
 models:
   - name: dim_customers
+    description: Dimension table for customers.
     columns: 
       - name: customer_id
+        description: The primary key for customers.
         data_tests:
           - not_null
