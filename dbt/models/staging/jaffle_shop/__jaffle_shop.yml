@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: raw_jaffle_shop
+    database: dbt-learning-423822
+    schema: jaffle_shop
+    tables:
+      - name: customers
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+
+      - name: orders
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+      - name: adf_triggers
+      - name: adf_pipeline_runs
+      - name: adf_pipelines
+  

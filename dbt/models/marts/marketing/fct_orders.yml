@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: fct_orders
+    columns: 
+      - name: order_id
+        description: Primary key for orders.
+        data_tests:
+          - not_null
+      - name: customer_id
+        description: The primary key for customers.
+        data_tests:
+          - not_null
